@@ -1,0 +1,17 @@
+<h2>Edit Book</h2>
+
+<form (ngSubmit)="updateBook()">
+  <label>Title:</label>
+  <input type="text" [(ngModel)]="book.title" name="title" required><br><br>
+
+  <label>Author:</label>
+  <input type="text" [(ngModel)]="book.author" name="author" required><br><br>
+
+  <label>Genre:</label>
+  <input type="text" [(ngModel)]="book.genre" name="genre" required><br><br>
+
+  <label>Price:</label>
+  <input type="number" [(ngModel)]="book.price" name="price" required><br><br>
+
+  <button type="submit">Update Book</button>
+</form>
